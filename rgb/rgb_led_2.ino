@@ -5,9 +5,6 @@ int taster=11;
 int taster2=12;
 int taster3=13;
 int flag=0;
-int flag2=0;
-int flag3=0;
-int flag4=0;
 int i = 0;
 int zeit=75;
 
@@ -36,24 +33,24 @@ if (digitalRead(taster) == HIGH && flag == 0)
 		}
 			if (digitalRead(taster) == HIGH)
 			{
-    		digitalWrite(LEDrot, HIGH);
-    		digitalWrite(LEDblau, HIGH);
-    		digitalWrite(LEDgreen, HIGH);
-    		delay(375);
+    				digitalWrite(LEDrot, HIGH);
+ 		   		digitalWrite(LEDblau, HIGH);
+    				digitalWrite(LEDgreen, HIGH);
+    				delay(375);
 			}
 				if (digitalRead(taster) == HIGH)
 				{
-    				digitalWrite(LEDgreen, LOW);
-    				delay(zeit);
-    				digitalWrite(LEDblau, LOW);
-    				delay(zeit);
-    				digitalWrite(LEDrot, LOW);
-    				delay(zeit);
-    				digitalWrite(LEDgreen, HIGH);
-    				delay(zeit);
-    				digitalWrite(LEDblau, HIGH);
-    				delay(zeit);
-    				digitalWrite(LEDrot, HIGH);
+    					digitalWrite(LEDgreen, LOW);
+    					delay(zeit);
+    					digitalWrite(LEDblau, LOW);
+    					delay(zeit);
+    					digitalWrite(LEDrot, LOW);
+    					delay(zeit);
+    					digitalWrite(LEDgreen, HIGH);
+    					delay(zeit);
+    					digitalWrite(LEDblau, HIGH);
+    					delay(zeit);
+    					digitalWrite(LEDrot, HIGH);
   				}
 
 }
