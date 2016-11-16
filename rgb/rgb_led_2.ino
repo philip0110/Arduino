@@ -47,8 +47,14 @@ if (digitalRead(taster) == HIGH && flag == 0)
     					digitalWrite(LEDblau, HIGH);
     					delay(zeit);
     					digitalWrite(LEDrot, HIGH);
-					flag = 0;
   				}
+					if (digitalRead(taster) == HIGH)
+					{
+						digitalWrite(LEDgreen, LOW);
+						digitalWrite(LEDblau, LOW);
+						digitalWrite(LEDrot, LOW);
+						flag = 0;
+					}
 
 }
 
