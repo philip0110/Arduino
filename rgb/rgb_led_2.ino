@@ -2,8 +2,6 @@ int LEDblau=5;
 int LEDrot=6;
 int LEDgreen=7;
 int taster=11;
-int taster2=12;
-int taster3=13;
 int flag=0;
 int i = 0;
 int zeit=75;
@@ -13,9 +11,7 @@ void setup()
 pinMode(LEDblau, OUTPUT);
 pinMode(taster, INPUT);
 pinMode(LEDrot, OUTPUT);
-pinMode(taster2, INPUT);
 pinMode(LEDgreen, OUTPUT);
-pinMode(taster3, INPUT);
 }
 void loop()
 {
@@ -51,6 +47,7 @@ if (digitalRead(taster) == HIGH && flag == 0)
     					digitalWrite(LEDblau, HIGH);
     					delay(zeit);
     					digitalWrite(LEDrot, HIGH);
+					flag = 0;
   				}
 
 }
